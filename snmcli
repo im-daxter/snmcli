@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Programa em Shell Script feito para conectar no Wifi de forma mais simples
-# By Kravchenko
+# By im-daxter
 
 # Verificar os dispositivos gerenciados pelo Network Manager "d[evice]"
 echo "Verificando os dispositivos gerenciados pelo Network Manager"
