@@ -11,8 +11,8 @@ Um utilitário simples em Shell Script para facilitar a conexão em redes Wi-Fi 
 ## 📋 Pré-requisitos
 Para utilizar este script, você precisa ter o **NetworkManager** instalado e rodando no seu sistema Linux.
 
+Exemplo de como verificar se você tem o nmcli instalado
 ```bash
-# Exemplo de como verificar se você tem o nmcli instalado
 nmcli --version
 ```
 
