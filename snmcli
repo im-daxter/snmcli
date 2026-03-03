@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+# Programa em Shell Script feito para conectar no Wifi de forma mais simples
+# By Kravchenko
+
+# Verificar os dispositivos gerenciados pelo Network Manager "d[evice]"
+echo "Verificando os dispositivos gerenciados pelo Network Manager"
+nmcli d
+echo ""
+sleep 2s
+
+# Mostrar o status dos interruptores do rádio e ativar o Wifi
+nmcli r wifi on
+
+# Listar as redes de Wifi disponíveis
+echo "Lista de todas as rede disponíveis: "
+nmcli d wifi list
+echo ""
+
+# Exigir em qual rede se conectar, pedindo pelo SSID e depois exigir a senha
+read -e -p  "Digite o SSID da rede que deseja conectar: " SSID
+nmcli d wifi connect "$SSID" --ask
