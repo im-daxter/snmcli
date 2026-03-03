@@ -1,19 +1,20 @@
-WiFi Connect Script 📶
+# WiFi Connect Script 📶
 
-Um utilitário simples em Shell Script para facilitar a conexão em redes Wi-Fi via terminal, utilizando o nmcli (Network Manager).
-🚀 Funcionalidades
+Um utilitário simples em Shell Script para facilitar a conexão em redes Wi-Fi via terminal, utilizando o `nmcli` (Network Manager).
 
-    Verifica dispositivos de rede ativos.
+## 🚀 Funcionalidades
+* Verifica dispositivos de rede gerenciados.
+* Ativa o rádio Wi-Fi automaticamente.
+* Lista todas as redes disponíveis em tempo real.
+* Interface interativa para digitar o SSID e a senha.
 
-    Ativa o rádio Wi-Fi automaticamente.
+## 📋 Pré-requisitos
+Para utilizar este script, você precisa ter o **NetworkManager** instalado e rodando no seu sistema Linux.
 
-    Lista as redes disponíveis com detalhes (SSID, sinal, segurança).
+```bash
+# Exemplo de como verificar se você tem o nmcli instalado
+nmcli --version
 
-    Solicita a conexão de forma interativa.
-
-📋 Pré-requisitos
-
-Para utilizar este script, você precisa ter o NetworkManager instalado e rodando no seu sistema Linux. A maioria das distribuições (Ubuntu, Fedora, Arch, etc.) já o traz por padrão.
 🛠️ Como usar
 
     Clone o repositório ou baixe o arquivo:
