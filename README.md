@@ -18,7 +18,7 @@ nmcli --version
 
 ## 🛠️ Como usar
 
-1. Clone o repositório:
+Clone o repositório:
 ```bash
 git clone https://github.com/im-daxter/snmcli.git
 cd snmcli
@@ -27,7 +27,7 @@ cd snmcli
 Dê permissão de execução ao arquivo:
   
 ```bash
-chmod +x wifi_connect.sh
+chmod +x snmcli
 ```
 
 Execute o script:
