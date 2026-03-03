@@ -14,33 +14,39 @@ Para utilizar este script, você precisa ter o **NetworkManager** instalado e ro
 ```bash
 # Exemplo de como verificar se você tem o nmcli instalado
 nmcli --version
+```
 
-🛠️ Como usar
+## 🛠️ Como usar
 
-    Clone o repositório ou baixe o arquivo:
-    Bash
+1. Clone o repositório:
+```bash
+git clone https://github.com/im-daxter/snmcli.git
+cd snmcli
+```
+  
+Dê permissão de execução ao arquivo:
+  
+```bash
+chmod +x wifi_connect.sh
+```
 
-    git clone https://github.com/seu-usuario/nome-do-repo.git
-    cd nome-do-repo
+Execute o script:
+```bash
+./snmcli
+```
 
-    Dê permissão de execução ao script:
-    Bash
+## 📝 Como funciona
 
-    chmod +x wifi_connect.sh
+O script executa os seguintes passos:
 
-    Execute o script:
-    Bash
+    • Lista as interfaces de rede para confirmar se o Wi-Fi está disponível.
 
-    ./wifi_connect.sh
+    • Garante que o rádio Wi-Fi esteja ligado (nmcli r wifi on).
 
-📝 Exemplo de Uso
+    • Escaneia e mostra as redes próximas.
 
-Ao rodar o script, ele listará as redes e pedirá os dados:
+    • Solicita o nome da rede (SSID) e a senha de forma segura através do parâmetro --ask.
 
-    SSID: O nome da rede Wi-Fi.
+## 👤 Autor
 
-    Senha: O prompt do nmcli abrirá pedindo a credencial de forma segura.
-
-👤 Autor
-
-Desenvolvido por im-daxter.
+Desenvolvido por **im-daxter**.
