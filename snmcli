@@ -18,5 +18,5 @@ nmcli d wifi list
 echo ""
 
 # Exigir em qual rede se conectar, pedindo pelo SSID e depois exigir a senha
-read -e -p  "Digite o SSID da rede que deseja conectar: " SSID
+read -e -p "Digite o SSID da rede que deseja conectar: " SSID
 nmcli d wifi connect "$SSID" --ask
